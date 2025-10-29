@@ -7,6 +7,8 @@ import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
+import { Mail, Phone } from 'lucide-react';
 
 export default function ContactPage() {
   return (
@@ -74,6 +76,20 @@ export default function ContactPage() {
               </div>
               <Button type="submit" className="w-full" size="lg">Send Message</Button>
             </form>
+            <Separator className="my-8" />
+            <div className="text-center">
+                <h3 className="font-headline text-lg mb-4">Other Ways to Reach Us</h3>
+                <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 text-muted-foreground">
+                    <a href="mailto:graceantony202@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors">
+                        <Mail className="w-5 h-5" />
+                        <span>graceantony202@gmail.com</span>
+                    </a>
+                    <a href="tel:+2349015028666" className="flex items-center gap-2 hover:text-primary transition-colors">
+                        <Phone className="w-5 h-5" />
+                        <span>+234 901 502 8666</span>
+                    </a>
+                </div>
+            </div>
           </CardContent>
         </Card>
       </main>
