@@ -45,9 +45,9 @@ export function Footer() {
             <p className="mt-2">🌐 www.emcoder.netlify.app/</p>
           </div>
           <div className="flex space-x-4 mt-4">
-            <Link href="#" className="text-muted-foreground transition-transform hover:scale-125 hover:text-accent hover:drop-shadow-[0_0_5px_hsl(var(--accent))]"><Facebook /></Link>
-            <Link href="#" className="text-muted-foreground transition-transform hover:scale-125 hover:text-accent hover:drop-shadow-[0_0_5px_hsl(var(--accent))]"><Linkedin /></Link>
-            <Link href="#" className="text-muted-foreground transition-transform hover:scale-125 hover:text-accent hover:drop-shadow-[0_0_5px_hsl(var(--accent))]"><Instagram /></Link>
+            <Link href="https://web.facebook.com/nancy.foster.562329" target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-transform hover:scale-125 hover:text-accent hover:drop-shadow-[0_0_5px_hsl(var(--accent))]"><Facebook /></Link>
+            <Link href="https://www.linkedin.com/in/isitua-grace-047110252/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-transform hover:scale-125 hover:text-accent hover:drop-shadow-[0_0_5px_hsl(var(--accent))]"><Linkedin /></Link>
+            <Link href="https://www.instagram.com/empressfoster/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-transform hover:scale-125 hover:text-accent hover:drop-shadow-[0_0_5px_hsl(var(--accent))]"><Instagram /></Link>
           </div>
         </div>
       </div>
