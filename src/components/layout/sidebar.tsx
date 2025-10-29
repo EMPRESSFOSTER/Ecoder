@@ -7,7 +7,7 @@ import { Progress } from '@/components/ui/progress';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { useProgress } from '@/hooks/use-progress';
 import { type Topic } from '@/lib/lessons';
-import { CheckCircle2, Code, FileCode2, Palette } from 'lucide-react';
+import { CheckCircle2, Code, FileCode2, Palette, Server } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Logo } from '@/components/logo';
 
@@ -15,6 +15,7 @@ const topicIcons: { [key: string]: React.ElementType } = {
   html: FileCode2,
   css: Palette,
   javascript: Code,
+  nodejs: Server,
 };
 
 export function AppSidebar({ topics }: { topics: Topic[] }) {

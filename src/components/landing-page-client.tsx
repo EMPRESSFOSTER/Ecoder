@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
-import { ArrowRight, Code, FileCode2, Palette, Zap, Award, Users, Star } from 'lucide-react';
+import { ArrowRight, Code, FileCode2, Palette, Zap, Award, Users, Star, Server } from 'lucide-react';
 import { Logo } from '@/components/logo';
 import { type Topic } from '@/lib/lessons';
 import Image from 'next/image';
@@ -42,6 +42,7 @@ export function LandingPageClient({ topics }: { topics: Topic[] }) {
     html: FileCode2,
     css: Palette,
     javascript: Code,
+    nodejs: Server,
   };
 
   const features = [
@@ -218,7 +219,7 @@ export function LandingPageClient({ topics }: { topics: Topic[] }) {
                 </p>
               </div>
             </div>
-            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 sm:grid-cols-2 md:grid-cols-3">
+            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
               {topics.map((topic) => {
                 const Icon = topicIcons[topic.id] || Code;
                 return (
