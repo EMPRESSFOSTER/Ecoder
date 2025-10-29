@@ -1,8 +1,13 @@
 import Link from 'next/link';
 import { Logo } from '@/components/logo';
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+
 
 export default function AboutPage() {
+  const whoWeAreImage = PlaceHolderImages.find(p => p.id === 'who-we-are-image');
+
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground overflow-hidden">
       <div className="absolute inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
@@ -73,12 +78,15 @@ export default function AboutPage() {
                     We exist to demystify technology and empower the next generation of builders, thinkers, and innovators. Our purpose is to provide the tools and knowledge needed to succeed in an increasingly digital world.
                 </p>
             </div>
+        </div>
 
-            <div className={cn(
-                "relative rounded-[20px] p-8 border border-white/10 bg-background/50 backdrop-blur-sm md:col-span-2 lg:col-span-3",
-                "shadow-[0_0_20px_theme(colors.primary/0.2),0_0_50px_theme(colors.accent/0.1)]",
-                "transition-transform duration-300 hover:scale-105"
-            )}>
+        <div className="w-full max-w-6xl mt-8">
+          <div className={cn(
+              "relative grid md:grid-cols-2 gap-8 items-center rounded-[20px] p-8 border border-white/10 bg-background/50 backdrop-blur-sm",
+              "shadow-[0_0_20px_theme(colors.primary/0.2),0_0_50px_theme(colors.accent/0.1)]",
+              "transition-transform duration-300 hover:scale-105"
+          )}>
+              <div>
                 <h2 className="text-3xl font-bold tracking-tighter font-headline mb-4">Who We Are</h2>
                 <p className="text-muted-foreground">
                     Emcoder is an interactive learning platform built to help beginners master the fundamentals of web development. We simplify coding by turning complex topics into fun, hands-on lessons that teach you HTML, CSS, and JavaScript step-by-step.
@@ -86,7 +94,18 @@ export default function AboutPage() {
                 <p className="text-muted-foreground mt-4">
                     Our goal is to make coding accessible, creative, and practical for everyone — whether you’re a student, designer, or tech enthusiast ready to start your web journey.
                 </p>
-            </div>
+              </div>
+              {whoWeAreImage && (
+                <Image
+                    src={whoWeAreImage.imageUrl}
+                    alt={whoWeAreImage.description}
+                    width={500}
+                    height={350}
+                    className="rounded-lg object-cover w-full h-full"
+                    data-ai-hint={whoWeAreImage.imageHint}
+                />
+              )}
+          </div>
         </div>
 
         <div className="w-full max-w-6xl mt-8">
