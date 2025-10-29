@@ -36,6 +36,13 @@ export default function ContactPage() {
             Lessons
           </Link>
           <Link
+            href="/html/01-what-is-html"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            prefetch={false}
+          >
+            Playground
+          </Link>
+          <Link
             href="/contact"
             className="text-sm font-medium text-primary underline underline-offset-4"
             prefetch={false}
