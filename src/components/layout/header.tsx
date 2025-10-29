@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Menu } from 'lucide-react';
 import { AppSidebar } from '@/components/layout/sidebar';
 import { type Topic } from '@/lib/lessons';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 export function Header({ topics }: { topics: Topic[] }) {
   return (
@@ -20,8 +21,8 @@ export function Header({ topics }: { topics: Topic[] }) {
           </SheetContent>
         </Sheet>
       </div>
-      <div className="hidden md:flex">
-        {/* Placeholder for future header items */}
+      <div className="flex items-center gap-4">
+        <ThemeToggle />
       </div>
     </header>
   );
