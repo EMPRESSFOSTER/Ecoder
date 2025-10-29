@@ -31,7 +31,7 @@ export default function ContactPage() {
             About
           </Link>
           <Link
-            href="/html/01-what-is-html"
+            href="/lessons"
             className="text-sm font-medium hover:underline underline-offset-4"
             prefetch={false}
           >

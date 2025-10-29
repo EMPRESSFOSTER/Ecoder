@@ -103,7 +103,7 @@ export function LandingPageClient({ topics }: { topics: Topic[] }) {
             About
           </Link>
           <Link
-            href="/html/01-what-is-html"
+            href="/lessons"
             className="text-sm font-medium hover:underline underline-offset-4"
             prefetch={false}
           >
@@ -147,7 +147,7 @@ export function LandingPageClient({ topics }: { topics: Topic[] }) {
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Button asChild size="lg">
-                    <Link href="/html/01-what-is-html">
+                    <Link href="/lessons">
                       Start Learning
                       <ArrowRight className="ml-2" />
                     </Link>

@@ -13,8 +13,8 @@ export default function LessonsLayout({
 
   return (
     <ProgressProvider>
-      <div className="min-h-screen w-full flex bg-background">
-        <aside className="hidden md:flex flex-col w-72 border-r">
+      <div className="min-h-screen w-full flex bg-gradient-to-b from-[#05080f] to-[#0e1320]">
+        <aside className="hidden md:flex flex-col w-72 border-r border-blue-500/20 bg-[#0e1320]/50">
           <AppSidebar topics={topics} />
         </aside>
         <div className="flex-1 flex flex-col">
