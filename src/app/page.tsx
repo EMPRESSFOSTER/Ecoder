@@ -173,7 +173,7 @@ export default function LandingPage() {
                 return (
                   <Card key={topic.id} className={cn(
                     "bg-background/50 transition-all duration-300",
-                    "hover:scale-105 hover:shadow-[0_0_20px_var(--primary-glow),0_0_50px_var(--accent-glow)]"
+                    "hover:scale-105 hover:shadow-[0_0_20px_hsl(var(--primary-glow)),0_0_50px_hsl(var(--accent-glow))]"
                   )}>
                     <CardHeader className="flex flex-row items-center gap-4">
                       <div className="grid gap-1">
@@ -247,3 +247,5 @@ export default function LandingPage() {
     </div>
   );
 }
+
+    
