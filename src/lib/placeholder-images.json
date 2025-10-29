@@ -2,26 +2,26 @@
   "placeholderImages": [
     {
       "id": "hero-section-image",
-      "description": "A futuristic coding environment with holographic displays.",
-      "imageUrl": "https://images.unsplash.com/photo-1607431067517-fda93b3e0aee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWJzdHJhY3QlMjBjb2RlfGVufDB8fHx8MTc2MTc0OTUzNXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "abstract code"
+      "description": "A futuristic coding environment with holographic displays and abstract code.",
+      "imageUrl": "https://images.unsplash.com/photo-1550745165-9bc0b252726a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmdXR1cmlzdGljJTIwdGVjaHxlbnwwfHx8fDE3NjE4NTEyODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "futuristic tech"
     },
     {
       "id": "who-we-are-image",
-      "description": "A diverse team of developers collaborating around a table with laptops.",
-      "imageUrl": "https://images.unsplash.com/photo-1644088379091-d574269d422f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxUZWNoJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzYxNzYwOTMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "Tech abstract"
+      "description": "An abstract, glowing digital matrix representing the interconnected nature of code and developers.",
+      "imageUrl": "https://images.unsplash.com/photo-1535223289827-42f1e9919769?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx0ZWFtJTIwY29kaW5nfGVufDB8fHx8MTc2MTc2MTE4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "team coding"
     },
     {
       "id": "why-emcoder-image",
-      "description": "An illustration of a person learning to code on a computer with floating abstract shapes.",
-      "imageUrl": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOHx8dGVjaCUyMGFic3RyYWN0fGVufDB8fHx8MTc2MTc2MTA4NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "A focused individual learning to code on a laptop in a modern, dark environment.",
+      "imageUrl": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzMHx8Y29kaW5nJTIwbGVhcm5pbmd8ZW58MHx8fHwxNzYxODYwMDU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "coding learning"
     },
     {
       "id": "features-section-image",
-      "description": "Abstract visualization of data and code connections.",
-      "imageUrl": "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb2RlfGVufDB8fHx8MTc2MTg0ODExOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "An abstract visualization of glowing data streams and code connections, representing interactive learning.",
+      "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb2RlfGVufDB8fHx8MTc2MTg0ODExOXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "code abstract"
     }
   ]
