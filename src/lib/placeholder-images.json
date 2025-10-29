@@ -8,9 +8,9 @@
     },
     {
       "id": "who-we-are-image",
-      "description": "A group of Black African developers working together on their laptops.",
-      "imageUrl": "https://images.unsplash.com/photo-1627990146420-41001a1827c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwZGV2ZWxvcGVyc3xlbnwwfHx8fDE3NjE5MjQwODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "african developers"
+      "description": "A diverse group of developers working together in a modern office.",
+      "imageUrl": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0ZWNoJTIwdGVhbXxlbnwwfHx8fDE3NjE5MjQ0NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tech team"
     }
   ]
 }
