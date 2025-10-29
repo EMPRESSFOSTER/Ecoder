@@ -7,8 +7,9 @@ import { Progress } from '@/components/ui/progress';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { useProgress } from '@/hooks/use-progress';
 import { type Topic } from '@/lib/lessons';
-import { CheckCircle2, Code, FileCode2, Palette, BookOpen } from 'lucide-react';
+import { CheckCircle2, Code, FileCode2, Palette } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { Logo } from '@/components/logo';
 
 const topicIcons: { [key: string]: React.ElementType } = {
   html: FileCode2,
@@ -27,7 +28,7 @@ export function AppSidebar({ topics }: { topics: Topic[] }) {
     <div className="flex flex-col h-full">
       <div className="p-4 border-b">
         <Link href="/" className="flex items-center gap-2 font-headline text-xl font-bold">
-          <BookOpen className="h-6 w-6 text-primary" />
+          <Logo className="h-7 w-7" />
           <span>Ecoder</span>
         </Link>
       </div>
