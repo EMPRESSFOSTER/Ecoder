@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -65,22 +66,22 @@ export function LandingPageClient({ topics }: { topics: Topic[] }) {
 
   const testimonials = [
       {
-          name: "Alex Johnson",
+          name: "Jide Okoro",
           role: "Aspiring Developer",
-          avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+          avatar: "https://randomuser.me/api/portraits/men/60.jpg",
           comment: "Emcoder's interactive lessons were a game-changer. I finally understood concepts that had confused me for months!",
       },
       {
-          name: "Maria Garcia",
+          name: "Amina Yusuf",
           role: "Designer",
           comment: "As a designer wanting to learn code, Emcoder was perfect. The visual feedback in the playground made learning HTML & CSS so intuitive.",
-          avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+          avatar: "https://randomuser.me/api/portraits/women/68.jpg",
       },
       {
-          name: "Sam Chen",
+          name: "David Adebayo",
           role: "Student",
           comment: "I used Emcoder to supplement my university courses, and it made a huge difference. The bite-sized lessons are easy to fit into a busy schedule.",
-          avatar: "https://randomuser.me/api/portraits/men/55.jpg",
+          avatar: "https://randomuser.me/api/portraits/men/3.jpg",
       }
   ];
 
@@ -133,7 +134,7 @@ export function LandingPageClient({ topics }: { topics: Topic[] }) {
                 <div className="space-y-2 h-28 md:h-36">
                   <h1
                     className={cn(
-                        "text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none font-headline bg-clip-text text-transparent bg-gradient-to-br from-primary via-accent to-primary",
+                        "text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none font-headline bg-clip-text text-transparent bg-gradient-to-br from-white to-gray-400",
                         "transition-all duration-500",
                         isAnimating ? 'opacity-0 -translate-y-4' : 'opacity-100 translate-y-0'
                     )}
@@ -302,3 +303,5 @@ export function LandingPageClient({ topics }: { topics: Topic[] }) {
     </div>
   );
 }
+
+    
