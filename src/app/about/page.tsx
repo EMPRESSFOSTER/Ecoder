@@ -49,7 +49,7 @@ export default function AboutPage() {
         <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className={cn(
                 "relative rounded-[20px] p-8 border border-white/10 bg-background/50 backdrop-blur-sm",
-                "shadow-[0_0_20px_var(--primary-glow),0_0_50px_var(--accent-glow)]",
+                "shadow-[0_0_20px_hsl(var(--primary-glow)),0_0_50px_hsl(var(--accent-glow))]",
                 "transition-transform duration-300 hover:scale-105"
             )}>
                 <h2 className="text-3xl font-bold tracking-tighter font-headline mb-4">Our Mission</h2>
@@ -60,7 +60,7 @@ export default function AboutPage() {
             
             <div className={cn(
                 "relative rounded-[20px] p-8 border border-white/10 bg-background/50 backdrop-blur-sm",
-                "shadow-[0_0_20px_var(--primary-glow),0_0_50px_var(--accent-glow)]",
+                "shadow-[0_0_20px_hsl(var(--primary-glow)),0_0_50px_hsl(var(--accent-glow))]",
                 "transition-transform duration-300 hover:scale-105"
             )}>
                 <h2 className="text-3xl font-bold tracking-tighter font-headline mb-4">Our Vision</h2>
@@ -71,7 +71,7 @@ export default function AboutPage() {
 
             <div className={cn(
                 "relative rounded-[20px] p-8 border border-white/10 bg-background/50 backdrop-blur-sm",
-                "shadow-[0_0_20px_var(--primary-glow),0_0_50px_var(--accent-glow)]",
+                "shadow-[0_0_20px_hsl(var(--primary-glow)),0_0_50px_hsl(var(--accent-glow))]",
                 "transition-transform duration-300 hover:scale-105"
             )}>
                 <h2 className="text-3xl font-bold tracking-tighter font-headline mb-4">Our Purpose</h2>
@@ -81,51 +81,50 @@ export default function AboutPage() {
             </div>
         </div>
 
-        <div className="w-full max-w-6xl mt-8">
-          <div className={cn(
-              "relative grid md:grid-cols-2 gap-8 items-center rounded-[20px] p-8 border border-white/10 bg-background/50 backdrop-blur-sm",
-              "shadow-[0_0_20px_var(--primary-glow),0_0_50px_var(--accent-glow)]",
-              "transition-transform duration-300 hover:scale-105"
-          )}>
-              <div>
-                <h2 className="text-3xl font-bold tracking-tighter font-headline mb-4">Who We Are</h2>
-                <p className="text-muted-foreground">
-                    Emcoder is an interactive learning platform built to help beginners master the fundamentals of web development. We simplify coding by turning complex topics into fun, hands-on lessons that teach you HTML, CSS, and JavaScript step-by-step.
+        <div className="w-full max-w-6xl mt-8 grid md:grid-cols-2 gap-8">
+            <div className={cn(
+                "relative flex flex-col justify-between rounded-[20px] p-8 border border-white/10 bg-background/50 backdrop-blur-sm",
+                "shadow-[0_0_20px_hsl(var(--primary-glow)),0_0_50px_hsl(var(--accent-glow))]",
+                "transition-transform duration-300 hover:scale-105"
+            )}>
+                <div>
+                  <h2 className="text-3xl font-bold tracking-tighter font-headline mb-4">Who We Are</h2>
+                  <p className="text-muted-foreground">
+                      Emcoder is an interactive learning platform built to help beginners master the fundamentals of web development. We simplify coding by turning complex topics into fun, hands-on lessons that teach you HTML, CSS, and JavaScript step-by-step.
+                  </p>
+                  <p className="text-muted-foreground mt-4">
+                      Our goal is to make coding accessible, creative, and practical for everyone — whether you’re a student, designer, or tech enthusiast ready to start your web journey.
+                  </p>
+                </div>
+                {whoWeAreImage && (
+                  <Image
+                      src={whoWeAreImage.imageUrl}
+                      alt={whoWeAreImage.description}
+                      width={500}
+                      height={350}
+                      className="rounded-lg object-cover w-full h-auto mt-4"
+                      data-ai-hint={whoWeAreImage.imageHint}
+                  />
+                )}
+            </div>
+            <div className={cn(
+                "relative flex flex-col justify-between rounded-[20px] p-8 border border-white/10 bg-background/50 backdrop-blur-sm",
+                "shadow-[0_0_20px_hsl(var(--primary-glow)),0_0_50px_hsl(var(--accent-glow))]",
+                "transition-transform duration-300 hover:scale-105"
+            )}>
+                <div>
+                    <h2 className="text-3xl font-bold tracking-tighter font-headline mb-4">Why Emcoder?</h2>
+                    <p className="text-muted-foreground">
+                        At Emcoder, we make learning web development simple, fun, and interactive. Our lessons combine real-time coding practice, visual learning, and small projects to help you learn by doing.
+                    </p>
+                    <p className="text-muted-foreground mt-4">
+                        We believe anyone can learn to code — all it takes is curiosity and the right guide. With Emcoder, you’ll go from zero to building your own websites confidently, one lesson at a time.
+                    </p>
+                </div>
+                <p className="text-center font-bold text-lg bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent mt-6">
+                    Emcoder — Learn. Build. Create.
                 </p>
-                <p className="text-muted-foreground mt-4">
-                    Our goal is to make coding accessible, creative, and practical for everyone — whether you’re a student, designer, or tech enthusiast ready to start your web journey.
-                </p>
-              </div>
-              {whoWeAreImage && (
-                <Image
-                    src={whoWeAreImage.imageUrl}
-                    alt={whoWeAreImage.description}
-                    width={500}
-                    height={350}
-                    className="rounded-lg object-cover w-full h-full"
-                    data-ai-hint={whoWeAreImage.imageHint}
-                />
-              )}
-          </div>
-        </div>
-
-        <div className="w-full max-w-6xl mt-8">
-          <div className={cn(
-              "relative rounded-[20px] p-8 border border-white/10 bg-background/50 backdrop-blur-sm",
-              "shadow-[0_0_20px_var(--primary-glow),0_0_50px_var(--accent-glow)]",
-              "transition-transform duration-300 hover:scale-105"
-          )}>
-              <h2 className="text-3xl font-bold tracking-tighter font-headline mb-4">Why Emcoder?</h2>
-              <p className="text-muted-foreground">
-                  At Emcoder, we make learning web development simple, fun, and interactive. Our lessons combine real-time coding practice, visual learning, and small projects to help you learn by doing.
-              </p>
-              <p className="text-muted-foreground mt-4">
-                  We believe anyone can learn to code — all it takes is curiosity and the right guide. With Emcoder, you’ll go from zero to building your own websites confidently, one lesson at a time.
-              </p>
-              <p className="text-center font-bold text-lg bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent mt-6">
-                  Emcoder — Learn. Build. Create.
-              </p>
-          </div>
+            </div>
         </div>
       </main>
 
