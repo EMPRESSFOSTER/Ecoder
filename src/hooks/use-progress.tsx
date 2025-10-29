@@ -12,7 +12,7 @@ interface ProgressContextType {
 
 const ProgressContext = createContext<ProgressContextType | undefined>(undefined);
 
-const LOCAL_STORAGE_KEY = 'codestarter_progress';
+const LOCAL_STORAGE_KEY = 'ecoder_progress';
 
 export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [completedLessons, setCompletedLessons] = useState<LessonIdentifier[]>([]);

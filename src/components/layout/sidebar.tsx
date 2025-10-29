@@ -28,7 +28,7 @@ export function AppSidebar({ topics }: { topics: Topic[] }) {
       <div className="p-4 border-b">
         <Link href="/" className="flex items-center gap-2 font-headline text-xl font-bold">
           <BookOpen className="h-6 w-6 text-primary" />
-          <span>CodeStarter</span>
+          <span>Ecoder</span>
         </Link>
       </div>
       <ScrollArea className="flex-1">
