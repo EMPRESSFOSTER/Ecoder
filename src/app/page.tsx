@@ -14,6 +14,7 @@ import { cn } from '@/lib/utils';
 export default function LandingPage() {
   const topics = getTopics();
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-section-image');
+  const featuresImage = PlaceHolderImages.find(p => p.id === 'features-section-image');
 
   const topicIcons: { [key: string]: React.ElementType } = {
     html: FileCode2,
@@ -132,29 +133,43 @@ export default function LandingPage() {
         </section>
 
         <section id="features" className="w-full py-12 md:py-24 lg:py-32">
-            <div className="container px-4 md:px-6">
-                <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-                    <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Key Features</div>
-                    <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Why Choose Emcoder?</h2>
-                    <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                        We've designed our platform to be the most effective and enjoyable way to start your coding journey.
-                    </p>
-                </div>
-                <div className="mx-auto grid max-w-5xl items-center gap-6 lg:grid-cols-3 lg:gap-12">
-                    {features.map((feature, index) => {
-                        const Icon = feature.icon;
-                        return (
-                            <div key={index} className="flex flex-col items-center text-center p-4">
-                                <div className="mb-4 rounded-full bg-primary/10 p-4 border-2 border-primary/20">
-                                    <Icon className="h-10 w-10 text-primary" />
-                                </div>
-                                <h3 className="text-xl font-bold font-headline mb-2">{feature.title}</h3>
-                                <p className="text-muted-foreground">{feature.description}</p>
-                            </div>
-                        )
-                    })}
-                </div>
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
+              <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Key Features</div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Why Choose Emcoder?</h2>
+              <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                We've designed our platform to be the most effective and enjoyable way to start your coding journey.
+              </p>
             </div>
+            <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2">
+              {featuresImage && (
+                <Image
+                  src={featuresImage.imageUrl}
+                  alt={featuresImage.description}
+                  width={600}
+                  height={400}
+                  className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full"
+                  data-ai-hint={featuresImage.imageHint}
+                />
+              )}
+              <div className="grid gap-6">
+                {features.map((feature, index) => {
+                  const Icon = feature.icon;
+                  return (
+                    <div key={index} className="flex items-start gap-4">
+                      <div className="rounded-full bg-primary/10 p-3 border-2 border-primary/20">
+                        <Icon className="h-6 w-6 text-primary" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold font-headline mb-1">{feature.title}</h3>
+                        <p className="text-muted-foreground">{feature.description}</p>
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+          </div>
         </section>
 
         <section id="topics" className="relative w-full py-12 md:py-24 lg:py-32">
