@@ -48,7 +48,7 @@ export default function AboutPage() {
         <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className={cn(
                 "relative rounded-[20px] p-8 border border-white/10 bg-background/50 backdrop-blur-sm",
-                "shadow-[0_0_20px_theme(colors.primary/0.2),0_0_50px_theme(colors.accent/0.1)]",
+                "shadow-[0_0_20px_var(--primary-glow),0_0_50px_var(--accent-glow)]",
                 "transition-transform duration-300 hover:scale-105"
             )}>
                 <h2 className="text-3xl font-bold tracking-tighter font-headline mb-4">Our Mission</h2>
@@ -59,7 +59,7 @@ export default function AboutPage() {
             
             <div className={cn(
                 "relative rounded-[20px] p-8 border border-white/10 bg-background/50 backdrop-blur-sm",
-                "shadow-[0_0_20px_theme(colors.primary/0.2),0_0_50px_theme(colors.accent/0.1)]",
+                "shadow-[0_0_20px_var(--primary-glow),0_0_50px_var(--accent-glow)]",
                 "transition-transform duration-300 hover:scale-105"
             )}>
                 <h2 className="text-3xl font-bold tracking-tighter font-headline mb-4">Our Vision</h2>
@@ -70,7 +70,7 @@ export default function AboutPage() {
 
             <div className={cn(
                 "relative rounded-[20px] p-8 border border-white/10 bg-background/50 backdrop-blur-sm",
-                "shadow-[0_0_20px_theme(colors.primary/0.2),0_0_50px_theme(colors.accent/0.1)]",
+                "shadow-[0_0_20px_var(--primary-glow),0_0_50px_var(--accent-glow)]",
                 "transition-transform duration-300 hover:scale-105"
             )}>
                 <h2 className="text-3xl font-bold tracking-tighter font-headline mb-4">Our Purpose</h2>
@@ -83,7 +83,7 @@ export default function AboutPage() {
         <div className="w-full max-w-6xl mt-8">
           <div className={cn(
               "relative grid md:grid-cols-2 gap-8 items-center rounded-[20px] p-8 border border-white/10 bg-background/50 backdrop-blur-sm",
-              "shadow-[0_0_20px_theme(colors.primary/0.2),0_0_50px_theme(colors.accent/0.1)]",
+              "shadow-[0_0_20px_var(--primary-glow),0_0_50px_var(--accent-glow)]",
               "transition-transform duration-300 hover:scale-105"
           )}>
               <div>
@@ -111,7 +111,7 @@ export default function AboutPage() {
         <div className="w-full max-w-6xl mt-8">
           <div className={cn(
               "relative rounded-[20px] p-8 border border-white/10 bg-background/50 backdrop-blur-sm",
-              "shadow-[0_0_20px_theme(colors.primary/0.2),0_0_50px_theme(colors.accent/0.1)]",
+              "shadow-[0_0_20px_var(--primary-glow),0_0_50px_var(--accent-glow)]",
               "transition-transform duration-300 hover:scale-105"
           )}>
               <h2 className="text-3xl font-bold tracking-tighter font-headline mb-4">Why Emcoder?</h2>
