@@ -62,7 +62,11 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   }), [completedLessons, isCompleted, toggleLessonCompletion]);
 
   if (!isLoaded) {
-    return <div className="min-h-screen w-full flex items-center justify-center bg-background"><p>Loading...</p></div>;
+    return (
+      <div className="min-h-screen w-full flex items-center justify-center bg-background">
+        <p>Loading...</p>
+      </div>
+    );
   }
 
   return (
