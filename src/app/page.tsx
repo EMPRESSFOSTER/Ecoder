@@ -157,7 +157,8 @@ export default function LandingPage() {
             </div>
         </section>
 
-        <section id="topics" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+        <section id="topics" className="relative w-full py-12 md:py-24 lg:py-32">
+          <div className="absolute inset-0 -z-10 h-full w-full bg-muted/50 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -247,5 +248,3 @@ export default function LandingPage() {
     </div>
   );
 }
-
-    
