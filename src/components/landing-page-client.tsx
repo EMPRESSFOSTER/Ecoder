@@ -195,7 +195,7 @@ export function LandingPageClient({ topics }: { topics: Topic[] }) {
                 {features.map((feature, index) => {
                   const Icon = feature.icon;
                   return (
-                    <div key={index} className="flex items-start gap-4">
+                    <div key={index} className={cn("flex items-start gap-4 p-6 rounded-lg bg-background/50 border border-white/10", "shadow-[0_0_20px_hsl(var(--primary-glow)),0_0_50px_hsl(var(--accent-glow))]")}>
                       <div className="rounded-full bg-primary/10 p-3 border-2 border-primary/20">
                         <Icon className="h-6 w-6 text-primary" />
                       </div>
@@ -228,7 +228,7 @@ export function LandingPageClient({ topics }: { topics: Topic[] }) {
                 return (
                   <Card key={topic.id} className={cn(
                     "bg-background/50 transition-all duration-300 border-white/10",
-                    "hover:scale-105 hover:shadow-[0_0_20px_hsl(var(--primary-glow)),0_0_50px_hsl(var(--accent-glow))]"
+                    "shadow-[0_0_20px_hsl(var(--primary-glow)),0_0_50px_hsl(var(--accent-glow))] hover:scale-105"
                   )}>
                     <CardHeader className="flex flex-row items-center gap-4">
                       <div className="grid gap-1">
