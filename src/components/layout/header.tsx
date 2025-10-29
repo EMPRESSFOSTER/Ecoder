@@ -1,13 +1,20 @@
+
+import Link from 'next/link';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { Menu } from 'lucide-react';
 import { AppSidebar } from '@/components/layout/sidebar';
 import { type Topic } from '@/lib/lessons';
 import { ThemeToggle } from '@/components/theme-toggle';
+import { Logo } from '../logo';
 
 export function Header({ topics }: { topics: Topic[] }) {
   return (
-    <header className="flex h-16 items-center justify-between sticky top-0 z-30 border-b bg-background/80 backdrop-blur-sm px-4 md:px-6 md:justify-end">
+    <header className="flex h-16 items-center justify-between sticky top-0 z-30 border-b border-white/10 bg-background/80 backdrop-blur-sm px-4 md:px-6">
+       <Link href="/" className="hidden items-center justify-center gap-2 font-headline text-xl font-bold md:flex" prefetch={false}>
+          <Logo className="h-7 w-7" />
+          <span>Emcoder</span>
+        </Link>
       <div className="md:hidden">
         <Sheet>
           <SheetTrigger asChild>
@@ -21,7 +28,37 @@ export function Header({ topics }: { topics: Topic[] }) {
           </SheetContent>
         </Sheet>
       </div>
-      <div className="flex items-center gap-4">
+       <nav className="hidden ml-auto md:flex gap-4 sm:gap-6 items-center">
+          <Link
+            href="/about"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            prefetch={false}
+          >
+            About
+          </Link>
+          <Link
+            href="/lessons"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            prefetch={false}
+          >
+            Lessons
+          </Link>
+          <Link
+            href="/html/01-what-is-html"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            prefetch={false}
+          >
+            Playground
+          </Link>
+          <Link
+            href="/contact"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            prefetch={false}
+          >
+            Contact
+          </Link>
+        </nav>
+      <div className="flex items-center gap-4 ml-4">
         <ThemeToggle />
       </div>
     </header>
