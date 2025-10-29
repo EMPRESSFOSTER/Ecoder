@@ -29,7 +29,7 @@ export function AppSidebar({ topics }: { topics: Topic[] }) {
       <div className="p-4 border-b">
         <Link href="/" className="flex items-center gap-2 font-headline text-xl font-bold">
           <Logo className="h-7 w-7" />
-          <span>Ecoder</span>
+          <span>Emcoder</span>
         </Link>
       </div>
       <ScrollArea className="flex-1">

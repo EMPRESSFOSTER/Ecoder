@@ -22,7 +22,7 @@ export default function LandingPage() {
       <header className="px-4 lg:px-6 h-16 flex items-center border-b">
         <Link href="#" className="flex items-center justify-center gap-2 font-headline text-xl font-bold" prefetch={false}>
           <Logo className="h-7 w-7" />
-          <span>Ecoder</span>
+          <span>Emcoder</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link
@@ -44,7 +44,7 @@ export default function LandingPage() {
                     Unlock Your Coding Potential
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    Ecoder provides interactive, beginner-friendly lessons to help you master the fundamentals of web
+                    Emcoder provides interactive, beginner-friendly lessons to help you master the fundamentals of web
                     development.
                   </p>
                 </div>
@@ -109,7 +109,7 @@ export default function LandingPage() {
         </section>
       </main>
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-xs text-muted-foreground">&copy; 2024 Ecoder. All rights reserved.</p>
+        <p className="text-xs text-muted-foreground">&copy; 2024 Emcoder. All rights reserved.</p>
       </footer>
     </div>
   );

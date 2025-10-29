@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props) {
     if (!lesson) {
         return { title: 'Lesson not found' };
     }
-    return { title: `${lesson.title} | Ecoder` };
+    return { title: `${lesson.title} | Emcoder` };
 }
 
 export default async function LessonPage({ params }: Props) {

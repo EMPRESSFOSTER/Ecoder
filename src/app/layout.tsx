@@ -4,7 +4,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
-  title: 'Ecoder',
+  title: 'Emcoder',
   description: 'Learn the basics of software engineering.',
 };
 
