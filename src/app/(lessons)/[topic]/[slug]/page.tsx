@@ -31,6 +31,7 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function LessonPage({ params }: Props) {
   const lesson = await getLessonData(params.topic, params.slug);
+  const topics = getTopics();
 
   if (!lesson) {
     notFound();
@@ -50,7 +51,7 @@ export default async function LessonPage({ params }: Props) {
                 />
             </CardContent>
             <CardFooter className="flex justify-center py-8">
-                <MarkAsCompleteButton topic={lesson.topic} slug={lesson.slug} />
+                <MarkAsCompleteButton topic={lesson.topic} slug={lesson.slug} topics={topics} />
             </CardFooter>
         </Card>
         <div className="lg:sticky lg:top-24 h-fit">
