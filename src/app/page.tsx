@@ -171,7 +171,10 @@ export default function LandingPage() {
               {topics.map((topic) => {
                 const Icon = topicIcons[topic.id] || Code;
                 return (
-                  <Card key={topic.id} className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl bg-background/50">
+                  <Card key={topic.id} className={cn(
+                    "bg-background/50 transition-all duration-300",
+                    "hover:scale-105 hover:shadow-[0_0_20px_var(--primary-glow),0_0_50px_var(--accent-glow)]"
+                  )}>
                     <CardHeader className="flex flex-row items-center gap-4">
                       <div className="grid gap-1">
                         <CardTitle>{topic.name}</CardTitle>
