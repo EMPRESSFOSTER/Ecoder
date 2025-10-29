@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import { Logo } from '@/components/logo';
 import { Facebook, Instagram, Linkedin } from 'lucide-react';
@@ -32,8 +33,7 @@ export function Footer() {
             <li><Link href="/" className="text-sm text-muted-foreground transition-colors hover:text-primary hover:drop-shadow-[0_0_5px_hsl(var(--primary))]">Home</Link></li>
             <li><Link href="/html/01-what-is-html" className="text-sm text-muted-foreground transition-colors hover:text-primary hover:drop-shadow-[0_0_5px_hsl(var(--primary))]">Courses</Link></li>
             <li><Link href="/html/01-what-is-html" className="text-sm text-muted-foreground transition-colors hover:text-primary hover:drop-shadow-[0_0_5px_hsl(var(--primary))]">Playground</Link></li>
-            <li><Link href="#" className="text-sm text-muted-foreground transition-colors hover:text-primary hover:drop-shadow-[0_0_5px_hsl(var(--primary))]">Blog</Link></li>
-            <li><Link href="#" className="text-sm text-muted-foreground transition-colors hover:text-primary hover:drop-shadow-[0_0_5px_hsl(var(--primary))]">Contact Us</Link></li>
+            <li><Link href="/contact" className="text-sm text-muted-foreground transition-colors hover:text-primary hover:drop-shadow-[0_0_5px_hsl(var(--primary))]">Contact Us</Link></li>
           </ul>
         </div>
 

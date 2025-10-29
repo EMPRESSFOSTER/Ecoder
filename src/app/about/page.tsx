@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import { Logo } from '@/components/logo';
 import { cn } from '@/lib/utils';
@@ -35,6 +36,13 @@ export default function AboutPage() {
             prefetch={false}
           >
             About
+          </Link>
+           <Link
+            href="/contact"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            prefetch={false}
+          >
+            Contact
           </Link>
         </nav>
       </header>

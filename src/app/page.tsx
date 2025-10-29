@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -39,6 +40,13 @@ export default function LandingPage() {
             prefetch={false}
           >
             About
+          </Link>
+          <Link
+            href="/contact"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            prefetch={false}
+          >
+            Contact
           </Link>
         </nav>
       </header>
