@@ -8,6 +8,7 @@ import { Footer } from '@/components/layout/footer';
 
 export default function AboutPage() {
   const whoWeAreImage = PlaceHolderImages.find(p => p.id === 'who-we-are-image');
+  const whyEmcoderImage = PlaceHolderImages.find(p => p.id === 'why-emcoder-image');
 
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground overflow-hidden">
@@ -121,6 +122,16 @@ export default function AboutPage() {
                         We believe anyone can learn to code — all it takes is curiosity and the right guide. With Emcoder, you’ll go from zero to building your own websites confidently, one lesson at a time.
                     </p>
                 </div>
+                {whyEmcoderImage && (
+                    <Image
+                        src={whyEmcoderImage.imageUrl}
+                        alt={whyEmcoderImage.description}
+                        width={500}
+                        height={350}
+                        className="rounded-lg object-cover w-full h-auto mt-4"
+                        data-ai-hint={whyEmcoderImage.imageHint}
+                    />
+                )}
                 <p className="text-center font-bold text-lg bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent mt-6">
                     Emcoder — Learn. Build. Create.
                 </p>

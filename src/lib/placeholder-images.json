@@ -11,6 +11,12 @@
       "description": "A diverse team of developers collaborating around a table with laptops.",
       "imageUrl": "https://images.unsplash.com/photo-1644088379091-d574269d422f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxUZWNoJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzYxNzYwOTMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Tech abstract"
+    },
+    {
+      "id": "why-emcoder-image",
+      "description": "An illustration of a person learning to code on a computer with floating abstract shapes.",
+      "imageUrl": "https://images.unsplash.com/photo-1555066931-4365d1469c8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2Rpbmd8ZW58MHx8fHwxNzYxODQxODg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coding learning"
     }
   ]
 }
