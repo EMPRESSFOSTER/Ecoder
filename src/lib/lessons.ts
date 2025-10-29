@@ -1,3 +1,4 @@
+
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -55,6 +56,17 @@ export const getTopics = cache((): Topic[] => {
       name: topicDir.charAt(0).toUpperCase() + topicDir.slice(1),
       lessons: lessons.sort((a, b) => a.order - b.order),
     };
+  });
+
+  // Custom sort order for topics
+  const desiredOrder = ['html', 'css', 'javascript', 'nodejs'];
+  topics.sort((a, b) => {
+    const indexA = desiredOrder.indexOf(a.id);
+    const indexB = desiredOrder.indexOf(b.id);
+    // If a topic is not in the desiredOrder array, it will be placed at the end.
+    if (indexA === -1) return 1;
+    if (indexB === -1) return -1;
+    return indexA - indexB;
   });
 
   return topics;
