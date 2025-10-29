@@ -60,7 +60,7 @@ export default function LessonsPage() {
                   "bg-[#0e1320]/50 border border-blue-500/20 rounded-[20px] shadow-[0_0_20px_rgba(20,158,242,0.1)] transition-all duration-300 overflow-hidden",
                   "hover:scale-105 hover:shadow-[0_0_30px_rgba(20,158,242,0.3),0_0_60px_rgba(162,123,255,0.2)]"
                   )}
-                  style={{ animation: `fadeInUp 0.5s ease-out ${index * 0.1}s forwards`, opacity: 0 }}
+                  style={{ animationDelay: `${index * 0.1}s` }}
                   >
                 <CardContent className="p-0">
                   <div className="relative">
@@ -104,19 +104,6 @@ export default function LessonsPage() {
       </main>
 
       <Footer />
-
-      <style jsx global>{`
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-      `}</style>
     </div>
   );
 }
