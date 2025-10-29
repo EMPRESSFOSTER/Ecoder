@@ -13,6 +13,8 @@ import { Footer } from '@/components/layout/footer';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { cn } from '@/lib/utils';
 import { useState, useEffect } from 'react';
+import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
+import Autoplay from 'embla-carousel-autoplay';
 
 const animatedTexts = [
   "Unlock Your Coding Potential",
@@ -82,6 +84,18 @@ export function LandingPageClient({ topics }: { topics: Topic[] }) {
           role: "Student",
           comment: "I used Emcoder to supplement my university courses, and it made a huge difference. The bite-sized lessons are easy to fit into a busy schedule.",
           avatar: "https://randomuser.me/api/portraits/men/3.jpg",
+      },
+      {
+          name: "Sarah Hassan",
+          role: "Product Manager",
+          comment: "The hands-on approach is fantastic. I can now communicate with my engineering team much more effectively.",
+          avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+      },
+      {
+          name: "Michael Chen",
+          role: "Entrepreneur",
+          comment: "I built the first version of my startup's website using the skills I learned on Emcoder. Highly recommended!",
+          avatar: "https://randomuser.me/api/portraits/men/32.jpg",
       }
   ];
 
@@ -262,39 +276,49 @@ export function LandingPageClient({ topics }: { topics: Topic[] }) {
                         Don't just take our word for it. Here's what our students have to say.
                     </p>
                 </div>
-                <div className="grid gap-8 md:grid-cols-3">
+                <Carousel
+                  opts={{ align: "start", loop: true }}
+                  plugins={[ Autoplay({ delay: 5000 }) ]}
+                  className="w-full max-w-4xl mx-auto"
+                >
+                  <CarouselContent>
                     {testimonials.map((testimonial, index) => (
-                        <Card key={index} className={cn(
-                            "relative overflow-hidden bg-background/50 border-white/10",
-                            "shadow-[0_0_20px_hsl(var(--primary-glow)),0_0_50px_hsl(var(--accent-glow))]"
-                        )}>
-                            <CardHeader className="p-6">
-                                <div className="flex items-center gap-4">
-                                    <Avatar>
-                                        <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
-                                        <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
-                                    </Avatar>
-                                    <div>
-                                        <CardTitle className="text-base font-bold">{testimonial.name}</CardTitle>
-                                        <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                                    </div>
-                                </div>
-                            </CardHeader>
-                            <CardContent className="p-6 pt-0">
-                                <p className="text-muted-foreground italic">"{testimonial.comment}"</p>
-                            </CardContent>
-                            <CardFooter className="p-6 pt-2 flex justify-end">
-                                <div className="flex text-yellow-400">
-                                    <Star className="w-5 h-5 fill-current" />
-                                    <Star className="w-5 h-5 fill-current" />
-                                    <Star className="w-5 h-5 fill-current" />
-                                    <Star className="w-5 h-5 fill-current" />
-                                    <Star className="w-5 h-5 fill-current" />
-                                </div>
-                            </CardFooter>
-                        </Card>
+                      <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                        <div className="p-1">
+                          <Card className={cn(
+                              "relative h-full overflow-hidden bg-background/50 border-white/10 flex flex-col",
+                              "shadow-[0_0_20px_hsl(var(--primary-glow)),0_0_50px_hsl(var(--accent-glow))]"
+                          )}>
+                              <CardHeader className="p-6">
+                                  <div className="flex items-center gap-4">
+                                      <Avatar>
+                                          <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
+                                          <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                                      </Avatar>
+                                      <div>
+                                          <CardTitle className="text-base font-bold">{testimonial.name}</CardTitle>
+                                          <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                                      </div>
+                                  </div>
+                              </CardHeader>
+                              <CardContent className="p-6 pt-0 flex-1">
+                                  <p className="text-muted-foreground italic">"{testimonial.comment}"</p>
+                              </CardContent>
+                              <CardFooter className="p-6 pt-2 flex justify-end">
+                                  <div className="flex text-yellow-400">
+                                      <Star className="w-5 h-5 fill-current" />
+                                      <Star className="w-5 h-5 fill-current" />
+                                      <Star className="w-5 h-5 fill-current" />
+                                      <Star className="w-5 h-5 fill-current" />
+                                      <Star className="w-5 h-5 fill-current" />
+                                  </div>
+                              </CardFooter>
+                          </Card>
+                        </div>
+                      </CarouselItem>
                     ))}
-                </div>
+                  </CarouselContent>
+                </Carousel>
             </div>
         </section>
 
