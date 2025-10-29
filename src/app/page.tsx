@@ -21,7 +21,10 @@ export default function LandingPage() {
 
   return (
     <div className="flex flex-col min-h-screen bg-background">
-      <header className="px-4 lg:px-6 h-16 flex items-center border-b">
+        <div className="absolute inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
+            <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-primary/20 opacity-20 blur-[100px]"></div>
+        </div>
+      <header className="px-4 lg:px-6 h-16 flex items-center border-b border-white/10 z-10">
         <Link href="#" className="flex items-center justify-center gap-2 font-headline text-xl font-bold" prefetch={false}>
           <Logo className="h-7 w-7" />
           <span>Emcoder</span>
@@ -86,7 +89,7 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-        <section id="topics" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <section id="topics" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -100,7 +103,7 @@ export default function LandingPage() {
               {topics.map((topic) => {
                 const Icon = topicIcons[topic.id] || Code;
                 return (
-                  <Card key={topic.id} className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                  <Card key={topic.id} className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl bg-background/50">
                     <CardHeader className="flex flex-row items-center gap-4">
                       <div className="grid gap-1">
                         <CardTitle>{topic.name}</CardTitle>
