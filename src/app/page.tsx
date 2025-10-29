@@ -73,18 +73,18 @@ export default function LandingPage() {
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6 items-center">
           <Link
-            href="/html/01-what-is-html"
-            className="text-sm font-medium hover:underline underline-offset-4"
-            prefetch={false}
-          >
-            Lessons
-          </Link>
-          <Link
             href="/about"
             className="text-sm font-medium hover:underline underline-offset-4"
             prefetch={false}
           >
             About
+          </Link>
+          <Link
+            href="/html/01-what-is-html"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            prefetch={false}
+          >
+            Lessons
           </Link>
           <Link
             href="/contact"
