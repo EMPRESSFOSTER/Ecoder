@@ -148,7 +148,7 @@ export function LandingPageClient({ topics }: { topics: Topic[] }) {
                 <div className="space-y-2 h-28 md:h-36">
                   <h1
                     className={cn(
-                        "text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none font-headline bg-clip-text text-transparent bg-gradient-to-br from-white to-gray-400",
+                        "text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none font-headline bg-clip-text text-transparent bg-gradient-to-br from-primary via-accent to-primary",
                         "transition-all duration-500",
                         isAnimating ? 'opacity-0 -translate-y-4' : 'opacity-100 translate-y-0'
                     )}
@@ -327,5 +327,3 @@ export function LandingPageClient({ topics }: { topics: Topic[] }) {
     </div>
   );
 }
-
-    
