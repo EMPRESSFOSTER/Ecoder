@@ -1,3 +1,4 @@
+
 import { notFound } from 'next/navigation';
 import { getLessonData, getTopics } from '@/lib/lessons';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
