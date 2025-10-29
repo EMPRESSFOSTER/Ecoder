@@ -2,6 +2,7 @@ import { AppSidebar } from '@/components/layout/sidebar';
 import { Header } from '@/components/layout/header';
 import { ProgressProvider } from '@/hooks/use-progress';
 import { getTopics } from '@/lib/lessons';
+import { Footer } from '@/components/layout/footer';
 
 export default function LessonsLayout({
   children,
@@ -21,6 +22,7 @@ export default function LessonsLayout({
           <main className="flex-1 overflow-y-auto p-6 lg:p-10">
             {children}
           </main>
+          <Footer />
         </div>
       </div>
     </ProgressProvider>
