@@ -3,6 +3,7 @@ import { Logo } from '@/components/logo';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { Footer } from '@/components/layout/footer';
 
 
 export default function AboutPage() {
@@ -128,9 +129,7 @@ export default function AboutPage() {
         </div>
       </main>
 
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t border-white/10 z-10">
-        <p className="text-xs text-muted-foreground">&copy; 2025 Emcoder. All rights reserved.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }

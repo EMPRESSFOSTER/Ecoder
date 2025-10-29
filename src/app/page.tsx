@@ -6,6 +6,7 @@ import { Logo } from '@/components/logo';
 import { getTopics } from '@/lib/lessons';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { Footer } from '@/components/layout/footer';
 
 export default function LandingPage() {
   const topics = getTopics();
@@ -115,9 +116,7 @@ export default function LandingPage() {
           </div>
         </section>
       </main>
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-xs text-muted-foreground">&copy; 2025 Emcoder. All rights reserved.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
