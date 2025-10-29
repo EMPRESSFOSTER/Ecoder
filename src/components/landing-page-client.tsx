@@ -85,11 +85,11 @@ export function LandingPageClient({ topics }: { topics: Topic[] }) {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen bg-background">
-        <div className="absolute inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
+    <div className="flex flex-col min-h-screen bg-gradient-to-b from-[#05080f] to-[#0e1320]">
+        <div className="absolute inset-0 -z-10 h-full w-full bg-transparent bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
             <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-primary/20 opacity-20 blur-[100px]"></div>
         </div>
-      <header className="px-4 lg:px-6 h-16 flex items-center border-b border-white/10 z-10">
+      <header className="px-4 lg:px-6 h-16 flex items-center border-b border-white/10 z-10 sticky top-0 bg-background/50 backdrop-blur-sm">
         <Link href="#" className="flex items-center justify-center gap-2 font-headline text-xl font-bold" prefetch={false}>
           <Logo className="h-7 w-7" />
           <span>Emcoder</span>
@@ -133,7 +133,7 @@ export function LandingPageClient({ topics }: { topics: Topic[] }) {
                 <div className="space-y-2 h-28 md:h-36">
                   <h1
                     className={cn(
-                        "text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none font-headline bg-clip-text text-transparent bg-gradient-to-br from-primary to-primary/70 drop-shadow-[0_0_10px_hsl(var(--primary-glow))]",
+                        "text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none font-headline bg-clip-text text-transparent bg-gradient-to-br from-primary via-accent to-primary",
                         "transition-all duration-500",
                         isAnimating ? 'opacity-0 -translate-y-4' : 'opacity-100 translate-y-0'
                     )}
@@ -146,7 +146,10 @@ export function LandingPageClient({ topics }: { topics: Topic[] }) {
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button asChild size="lg">
+                  <Button asChild size="lg" className={cn(
+                      "transition-all duration-300",
+                      "hover:shadow-[0_0_15px_hsl(var(--primary)),0_0_30px_hsl(var(--accent))] hover:scale-105"
+                  )}>
                     <Link href="/lessons">
                       Start Learning
                       <ArrowRight className="ml-2" />
@@ -224,7 +227,7 @@ export function LandingPageClient({ topics }: { topics: Topic[] }) {
                 const Icon = topicIcons[topic.id] || Code;
                 return (
                   <Card key={topic.id} className={cn(
-                    "bg-background/50 transition-all duration-300",
+                    "bg-background/50 transition-all duration-300 border-white/10",
                     "hover:scale-105 hover:shadow-[0_0_20px_hsl(var(--primary-glow)),0_0_50px_hsl(var(--accent-glow))]"
                   )}>
                     <CardHeader className="flex flex-row items-center gap-4">
