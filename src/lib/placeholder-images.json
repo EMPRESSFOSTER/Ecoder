@@ -2,21 +2,21 @@
   "placeholderImages": [
     {
       "id": "hero-section-image",
-      "description": "A futuristic coding environment with holographic displays and abstract code.",
-      "imageUrl": "https://images.unsplash.com/photo-1550745165-9bc0b252726a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmdXR1cmlzdGljJTIwdGVjaHxlbnwwfHx8fDE3NjE4NTEyODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "futuristic tech"
+      "description": "A close-up shot of lines of code on a curved monitor in a dark room, representing the core of programming.",
+      "imageUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb2RlfGVufDB8fHx8MTc2MjAwNTY3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "code closeup"
     },
     {
       "id": "who-we-are-image",
-      "description": "An abstract, glowing digital matrix representing the interconnected nature of code and developers.",
-      "imageUrl": "https://images.unsplash.com/photo-1535223289827-42f1e9919769?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx0ZWFtJTIwY29kaW5nfGVufDB8fHx8MTc2MTc2MTE4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "team coding"
+      "description": "A diverse team of developers collaborating around a table with laptops and code on screen.",
+      "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0ZWFtJTIwY29kaW5nfGVufDB8fHx8MTc2MTc2MTE4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "team collaboration"
     },
     {
       "id": "why-emcoder-image",
-      "description": "A focused individual learning to code on a laptop in a modern, dark environment.",
-      "imageUrl": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzMHx8Y29kaW5nJTIwbGVhcm5pbmd8ZW58MHx8fHwxNzYxODYwMDU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "coding learning"
+      "description": "A focused individual learning to code on a laptop in a modern, dark environment, with code reflected on their glasses.",
+      "imageUrl": "https://images.unsplash.com/photo-1624996752380-8ec242e0f85d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2RpbmclMjBsZWFybmluZ3xlbnwwfHx8fDE3NjIwMDYwMDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "focused coder"
     },
     {
       "id": "features-section-image",
