@@ -16,7 +16,7 @@ export default function LessonsLayout({
           <Header topics={topics} />
         <div className="flex flex-1">
             <aside className="hidden md:flex flex-col w-72 border-r border-blue-500/20 bg-[#0e1320]/50">
-            <AppSidebar topics={topics} />
+                <AppSidebar topics={topics} />
             </aside>
             <main className="flex-1 overflow-y-auto p-6 lg:p-10">
                 {children}

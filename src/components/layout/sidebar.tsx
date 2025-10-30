@@ -34,22 +34,7 @@ export function AppSidebar({ topics }: { topics: Topic[] }) {
           <span>Emcoder</span>
         </Link>
       </div>
-
-       <div className="p-4 space-y-2 border-b">
-            <Link href="/about" className="flex items-center gap-3 text-sm font-medium text-muted-foreground hover:text-foreground">
-                <Home className="h-5 w-5" /> About
-            </Link>
-            <Link href="/lessons" className="flex items-center gap-3 text-sm font-medium text-muted-foreground hover:text-foreground">
-                <BookOpen className="h-5 w-5" /> Lessons
-            </Link>
-            <Link href="/html/01-what-is-html" className="flex items-center gap-3 text-sm font-medium text-muted-foreground hover:text-foreground">
-                <FlaskConical className="h-5 w-5" /> Playground
-            </Link>
-            <Link href="/contact" className="flex items-center gap-3 text-sm font-medium text-muted-foreground hover:text-foreground">
-                <Mail className="h-5 w-5" /> Contact
-            </Link>
-        </div>
-        
+      
       <ScrollArea className="flex-1">
         <Accordion type="multiple" defaultValue={[currentTopic || topics[0]?.id]} className="w-full p-2">
           {topics.map((topic) => {
