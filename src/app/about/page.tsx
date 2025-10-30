@@ -5,11 +5,14 @@ import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Footer } from '@/components/layout/footer';
+import { getTopics } from '@/lib/lessons';
+import { Header } from '@/components/layout/header';
 
 
 export default function AboutPage() {
   const whoWeAreImage = PlaceHolderImages.find(p => p.id === 'who-we-are-image');
   const whyEmcoderImage = PlaceHolderImages.find(p => p.id === 'why-emcoder-image');
+  const topics = getTopics();
 
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground overflow-hidden">
@@ -17,47 +20,12 @@ export default function AboutPage() {
         <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-primary/20 opacity-20 blur-[100px]"></div>
       </div>
       
-      <header className="px-4 lg:px-6 h-16 flex items-center border-b border-white/10 z-10">
-        <Link href="/" className="flex items-center justify-center gap-2 font-headline text-xl font-bold" prefetch={false}>
-          <Logo className="h-7 w-7" />
-          <span>Emcoder</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link
-            href="/about"
-            className="text-sm font-medium text-primary underline underline-offset-4"
-            prefetch={false}
-          >
-            About
-          </Link>
-          <Link
-            href="/lessons"
-            className="text-sm font-medium hover:underline underline-offset-4"
-            prefetch={false}
-          >
-            Lessons
-          </Link>
-           <Link
-            href="/html/01-what-is-html"
-            className="text-sm font-medium hover:underline underline-offset-4"
-            prefetch={false}
-          >
-            Playground
-          </Link>
-           <Link
-            href="/contact"
-            className="text-sm font-medium hover:underline underline-offset-4"
-            prefetch={false}
-          >
-            Contact
-          </Link>
-        </nav>
-      </header>
+      <Header topics={topics} />
       
       <main className="flex-1 flex flex-col items-center justify-center p-4">
-        <div className="text-center mb-12">
+        <div className="text-center my-12">
             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter font-headline bg-clip-text text-transparent bg-gradient-to-br from-primary via-accent to-primary">
-                Emcoder
+                About Emcoder
             </h1>
             <p className="text-lg text-muted-foreground mt-2">Code. Create. Conquer.</p>
         </div>

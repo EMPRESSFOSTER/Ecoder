@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { ArrowRight, Code, FileCode2, Palette, Zap, Award, Users, Star, Server } from 'lucide-react';
-import { Logo } from '@/components/logo';
 import { type Topic } from '@/lib/lessons';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -15,6 +14,7 @@ import { cn } from '@/lib/utils';
 import { useState, useEffect } from 'react';
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
+import { Header } from './layout/header';
 
 const animatedTexts = [
   "Unlock Your Coding Potential",
@@ -104,44 +104,9 @@ export function LandingPageClient({ topics }: { topics: Topic[] }) {
         <div className="absolute inset-0 -z-10 h-full w-full bg-transparent bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
             <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-primary/20 opacity-20 blur-[100px]"></div>
         </div>
-      <header className="px-4 lg:px-6 h-16 flex items-center border-b border-white/10 z-10 sticky top-0 bg-background/50 backdrop-blur-sm">
-        <Link href="#" className="flex items-center justify-center gap-2 font-headline text-xl font-bold" prefetch={false}>
-          <Logo className="h-7 w-7" />
-          <span>Emcoder</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6 items-center">
-          <Link
-            href="/about"
-            className="text-sm font-medium hover:underline underline-offset-4"
-            prefetch={false}
-          >
-            About
-          </Link>
-          <Link
-            href="/lessons"
-            className="text-sm font-medium hover:underline underline-offset-4"
-            prefetch={false}
-          >
-            Lessons
-          </Link>
-          <Link
-            href="/html/01-what-is-html"
-            className="text-sm font-medium hover:underline underline-offset-4"
-            prefetch={false}
-          >
-            Playground
-          </Link>
-          <Link
-            href="/contact"
-            className="text-sm font-medium hover:underline underline-offset-4"
-            prefetch={false}
-          >
-            Contact
-          </Link>
-        </nav>
-      </header>
+      <Header topics={topics} className="bg-transparent border-none" />
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
+        <section className="w-full pt-12 md:pt-24 lg:pt-32 xl:pt-48">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <div className="flex flex-col justify-center space-y-4">

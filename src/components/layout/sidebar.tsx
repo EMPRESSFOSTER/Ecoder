@@ -8,9 +8,10 @@ import { Progress } from '@/components/ui/progress';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { useProgress } from '@/hooks/use-progress';
 import { type Topic } from '@/lib/lessons';
-import { CheckCircle2, Code, FileCode2, Palette, Server, BookOpen, Home, Mail, FlaskConical } from 'lucide-react';
+import { CheckCircle2, Code, FileCode2, Palette, Server, BookOpen, Home, Mail, FlaskConical, Info } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Logo } from '@/components/logo';
+import { Separator } from '../ui/separator';
 
 const topicIcons: { [key: string]: React.ElementType } = {
   html: FileCode2,
@@ -28,13 +29,31 @@ export function AppSidebar({ topics }: { topics: Topic[] }) {
   
   return (
     <div className="flex flex-col h-full">
-      <div className="p-4 border-b">
+      <div className="p-4 border-b border-white/10">
         <Link href="/" className="flex items-center gap-2 font-headline text-xl font-bold">
           <Logo className="h-7 w-7" />
           <span>Emcoder</span>
         </Link>
       </div>
+
+       <div className="p-4 space-y-2">
+          <h3 className="font-headline text-sm font-semibold tracking-wider uppercase text-muted-foreground">Main Menu</h3>
+          <Link href="/about" className="flex items-center gap-3 rounded-md px-2 py-2 text-sm font-medium hover:bg-accent/50">
+            <Info className="h-5 w-5" /> About
+          </Link>
+          <Link href="/lessons" className="flex items-center gap-3 rounded-md px-2 py-2 text-sm font-medium hover:bg-accent/50">
+            <BookOpen className="h-5 w-5" /> Lessons
+          </Link>
+          <Link href="/html/01-what-is-html" className="flex items-center gap-3 rounded-md px-2 py-2 text-sm font-medium hover:bg-accent/50">
+            <FlaskConical className="h-5 w-5" /> Playground
+          </Link>
+          <Link href="/contact" className="flex items-center gap-3 rounded-md px-2 py-2 text-sm font-medium hover:bg-accent/50">
+            <Mail className="h-5 w-5" /> Contact
+          </Link>
+       </div>
       
+      <Separator />
+
       <ScrollArea className="flex-1">
         <Accordion type="multiple" defaultValue={[currentTopic || topics[0]?.id]} className="w-full p-2">
           {topics.map((topic) => {
