@@ -120,6 +120,7 @@ export default function AboutPage() {
                       height={350}
                       className="rounded-lg object-cover w-full h-auto mt-4"
                       data-ai-hint={whoWeAreImage.imageHint}
+                      priority
                   />
                 )}
             </div>

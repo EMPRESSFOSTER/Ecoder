@@ -1,7 +1,6 @@
 
 import { AppSidebar } from '@/components/layout/sidebar';
 import { Header } from '@/components/layout/header';
-import { ProgressProvider } from '@/hooks/use-progress';
 import { getTopics } from '@/lib/lessons';
 import { Footer } from '@/components/layout/footer';
 
@@ -13,7 +12,6 @@ export default function LessonsLayout({
   const topics = getTopics();
 
   return (
-    <ProgressProvider>
       <div className="min-h-screen w-full flex flex-col bg-gradient-to-b from-[#05080f] to-[#0e1320]">
           <Header topics={topics} />
         <div className="flex flex-1">
@@ -26,6 +24,5 @@ export default function LessonsLayout({
         </div>
           <Footer />
       </div>
-    </ProgressProvider>
   );
 }
