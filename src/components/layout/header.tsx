@@ -58,7 +58,7 @@ export function Header({ topics }: { topics: Topic[] }) {
             Contact
           </Link>
         </nav>
-      <div className="flex items-center gap-4 ml-4">
+      <div className="flex items-center gap-4 ml-auto md:ml-4">
         <ThemeToggle />
       </div>
     </header>
